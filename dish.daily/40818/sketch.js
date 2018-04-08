@@ -19,8 +19,11 @@ function draw() {
 
 	for (let square of squares) {
 		push()
+
+		translate(width/2, height/2)
 		rotate(change)
-		rect(width/2, height/2, 50,50)
+		rect(0, 0, 50,50)
+		translate(-width/2, -height/2)
 		pop()
 	}
 

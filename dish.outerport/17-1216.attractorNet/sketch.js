@@ -13,5 +13,18 @@ function setup() {
 }
 
 function draw() {
-
+	background(0,100)
+	for(let at of g.attractors){
+		if (frameCount % 60 == 0) {
+			g.fillMatrix()
+			g.makePoints()
+		}
+		g.show()
+		for(let i = 0; i < nodes.length - 1; i++){
+			nodes[i].attracted(at)
+			nodes[i].connect(nodes[i + 1])
+		}
+		nodes[i].attracted(at)
+		nodes[0].connected(nodes[nodes.length - 1])
+	}
 }

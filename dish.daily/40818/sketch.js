@@ -8,9 +8,13 @@ function setup() {
 
 	let size = 1
 	squares = new Array(size)
+
+	rectMode(CENTER)
 }
 
 function draw() {
 
-
+	for (let square of squares) {
+		rect(width/2, height/2, 50,50)
+	}
 }

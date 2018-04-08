@@ -16,10 +16,9 @@ function setup() {
 }
 
 function draw() {
-
+	background(255, 10)
 	for (let square of squares) {
 		push()
-
 		translate(width/2, height/2)
 		rotate(change)
 		rect(0, 0, 50,50)

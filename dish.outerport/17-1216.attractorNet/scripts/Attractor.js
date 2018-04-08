@@ -10,4 +10,17 @@ class Attractor{
     this.pos = createVector(x,y)
     this.state = s
   }
+
+  show() {
+    if (this.state == 1) {
+      push()
+      stroke(255)
+      ellipse(this.pos.x, this.pos.y, 20)
+      pop()
+    } else {
+      stroke(255, 0, 0)
+      ellipse(this.pos.x, this.pos.y, 20)
+    }
+  }
+
 }

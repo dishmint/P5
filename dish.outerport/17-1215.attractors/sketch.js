@@ -9,7 +9,7 @@ function setup() {
 
 	g = new Grid(4,4)
 
-	gs = new GridSpace(50,50,g,2)
+	gs = new GridSpace(10,10,g,2)
 	gs.fillMatrix()
 	gs.show()
 }

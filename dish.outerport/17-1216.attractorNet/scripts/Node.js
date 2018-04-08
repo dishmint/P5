@@ -46,5 +46,6 @@ class Node {
     nd.update()
     nd.show()
     line(this.pos.x, this.pos.y, nd.pos.x, nd.pos.y)
+    pop()
   }
 }

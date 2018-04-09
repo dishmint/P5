@@ -8,15 +8,8 @@
 /*Ready Storage for the Creature*/
 let crete
 
-
 function setup() {
   createCanvas(windowWidth, windowHeight);
-
-  /*Set the movement line*/
-  let movementLineXRange = [0, width]
-  let movementLineYRange = height - (height / 5)
-  let movementLine = line(movementLineXRange[0], movementLineYRange, movementLineXRange[1], movementLineYRange)
-
   /*Create the Creature*/
   crete = new Creature(width / 2, movementLineYRange)
 }
@@ -24,5 +17,10 @@ function setup() {
 function draw() {
 	background(255)
 
-	crete.update()
+	push()
+	stroke('skyblue')
+	line(0, (height - (height/5)), width, (height - (height/5)))
+	pop()
+	// crete.update()
+	// crete.show()
 }

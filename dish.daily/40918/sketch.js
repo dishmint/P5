@@ -8,7 +8,7 @@
 /*Ready Storage for the Creature*/
 let crete
 
-let tree
+let trees = []
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -16,7 +16,19 @@ function setup() {
   /*Create the Creature*/
   crete = new Creature(width/2, (height - (height/5)))
 
-	tree = new Tree(width/3, (height/2), 50)
+  let size = 50
+
+  for (var i = 0; i < size; i++) {
+    // let yPos = constrain(random(height), height/4, height/2)
+    let yPos = (height - (height/5))
+    let xRange = map(yPos, height/4, height/2, .25, 1 )
+    let xPos = xRange * random(width)
+    let hh = random(10, 50)
+    let tr = new Tree(xPos, yPos, hh)
+    trees.push(tr)
+  }
+
+  console.log('Trees', trees);
 }
 
 function draw() {
@@ -31,7 +43,12 @@ function draw() {
 	crete.update()
 	crete.show()
 
+
+
 	/*Draw Trees*/
-  tree.update(crete)
-	tree.show()
+  for (let tree of trees) {
+    tree.update(crete)
+    tree.show()
+  }
+
 }

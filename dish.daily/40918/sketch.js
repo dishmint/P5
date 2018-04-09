@@ -8,11 +8,15 @@
 /*Ready Storage for the Creature*/
 let crete
 
+let tree
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
   /*Create the Creature*/
-  crete = new Creature(width / 2, (height - (height/5)))
+  crete = new Creature(width/2, (height - (height/5)))
+
+	tree = new Tree(width/3, (height/2), 30)
 }
 
 function draw() {
@@ -28,5 +32,5 @@ function draw() {
 	crete.show()
 
 	/*Draw Trees*/
-
+	tree.show()
 }

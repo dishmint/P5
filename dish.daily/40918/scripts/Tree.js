@@ -6,24 +6,19 @@
  */
 
 class Tree {
-  constructor(x, y, height) {
+  constructor(x, y, h) {
     this.pos = createVector(x, y)
-    this.h = height
-    this.canopy = createVector(x, y + this.h)
+    this.h = h
+    this.canopy = createVector(x, y - this.h)
   }
 
   update(ref){ /*ref => creature*/
-    let distance = this.pos.x - ref.pos.x
-    let t = map(distance, 0, width, 0, 1)
 
-    let canopyX = bezierPoint(this.pos.x,this.pos.x,this.pos.x,this.pos.x,t)
-    let canopyY = bezierPoint(
-      (this.pos.y + this.h),
-      (this.pos.y + ((3 *this.h)/4)),
-      (this.pos.y + (this.h/2)),
-      (this.pos.y + (this.h/4)),
-      t)
-    this.canopy = createVector(canopyX, canopyY)
+    let creatureMap = map(ref.pos.x - this.pos.x, -ref.pos.x, width, -1, 1)
+    let parabolize = (creatureMap * creatureMap)
+
+    this.canopy.y = this.pos.y - (this.h * parabolize)
+
   }
 
   show(){

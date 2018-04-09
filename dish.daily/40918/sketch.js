@@ -16,7 +16,7 @@ function setup() {
   /*Create the Creature*/
   crete = new Creature(width/2, (height - (height/5)))
 
-	tree = new Tree(width/3, (height/2), 30)
+	tree = new Tree(width/3, (height/2), 50)
 }
 
 function draw() {
@@ -32,5 +32,6 @@ function draw() {
 	crete.show()
 
 	/*Draw Trees*/
+  tree.update(crete)
 	tree.show()
 }

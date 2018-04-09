@@ -21,4 +21,8 @@ function setup() {
   crete = new Creature(width / 2, movementLineYRange)
 }
 
-function draw() {}
+function draw() {
+	background(255)
+
+	crete.update()
+}

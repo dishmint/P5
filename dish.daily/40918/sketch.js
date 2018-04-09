@@ -23,6 +23,6 @@ function draw() {
 	rect(0, (height - (height/5)), width, 10)
 	pop()
 
-	// crete.update()
-	// crete.show()
+	crete.update(mouseX, (height - (height/5)))
+	crete.show()
 }

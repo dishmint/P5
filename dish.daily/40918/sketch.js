@@ -10,9 +10,15 @@ let crete
 
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight);
+
+  /*Set the movement line*/
+  let movementLineXRange = [0, width]
+  let movementLineYRange = height - (height / 5)
+  let movementLine = line(movementLineXRange[0], movementLineYRange, movementLineXRange[1], movementLineYRange)
+
+  /*Create the Creature*/
+  crete = new Creature(width / 2, movementLineYRange)
 }
 
-function draw() {
-
-}
+function draw() {}

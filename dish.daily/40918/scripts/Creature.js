@@ -4,9 +4,8 @@ class Creature {
     this.clr = color('fuchsia')
   }
 
-  update(newX, newY){
-    this.pos.x = newX
-    this.pos.y = newY
+  update(){
+    this.pos.x = mouseX
   }
 
   show(){

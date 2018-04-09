@@ -11,16 +11,18 @@ let crete
 function setup() {
   createCanvas(windowWidth, windowHeight);
   /*Create the Creature*/
-  crete = new Creature(width / 2, movementLineYRange)
+  crete = new Creature(width / 2, (height - (height/5)))
 }
 
 function draw() {
 	background(255)
 
 	push()
-	stroke('skyblue')
-	line(0, (height - (height/5)), width, (height - (height/5)))
+	noStroke()
+	fill('skyblue')
+	rect(0, (height - (height/5)), width, 10)
 	pop()
+
 	// crete.update()
 	// crete.show()
 }

@@ -9,7 +9,7 @@ function setup() {
 }
 
 function draw() {
-  background(0, 50)
+  background(0, 10)
   stroke(255)
   noFill()
   translate(width / 2, height / 2)

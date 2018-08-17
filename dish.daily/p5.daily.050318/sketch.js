@@ -1,3 +1,5 @@
+// File: 050318
+
 
 let c1 = {
 	r: 178,
@@ -11,7 +13,7 @@ let dirX = 1
 let dirY = 1
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(400, 400);
 	background(c1.r,c1.g,c1.b)
 	ellipseMode(CENTER)
 

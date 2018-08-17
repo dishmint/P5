@@ -1,3 +1,5 @@
+// File: 040818
+
 // Lets do something with rotating squares!
 
 let squares
@@ -5,7 +7,7 @@ let squares
 let change = 0
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(400, 400);
 	pixelDensity(displayDensity())
 
 	let size = 1

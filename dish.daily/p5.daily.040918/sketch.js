@@ -1,4 +1,5 @@
-// Daily: 040918
+// File: 040918
+
 // Trees and Perspective in 2D
 // An simple creature that moves from left to right and the view of the environment changes accordingly.
 // STEP 1 => Creature
@@ -11,7 +12,7 @@ let crete
 let trees = []
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(400, 400);
 
   /*Create the Creature*/
   crete = new Creature(width/2, (height - (height/5)))

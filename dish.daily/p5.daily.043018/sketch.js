@@ -1,8 +1,10 @@
+// File: 043018
+
 let n = 0
 let dir = 1
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(400, 400);
   background(0)
   rectMode(CENTER)
   angleMode(DEGREES)

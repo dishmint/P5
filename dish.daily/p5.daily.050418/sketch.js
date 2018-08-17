@@ -1,8 +1,10 @@
+// File: 050418
+
 let change = 0
 let dir = 1
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(400, 400);
 	ellipseMode(CENTER)
 }
 

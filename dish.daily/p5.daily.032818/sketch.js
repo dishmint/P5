@@ -1,9 +1,9 @@
-// File: 32818
+// File: 032818
 
 // Explore circle rotation
 
 
-let change
+let change = 0
 let dir = 1
 
 
@@ -16,15 +16,15 @@ function setup(){
 
 
 function draw(){
-
   push()
   stroke('tomato')
+  noFill()
   ellipse(width/2, height/2, (width/4) - change, height/4)
   pop()
-
+  
   change ++
-  if (change > (3*width/4) || change < width/4) {
+  if (change > (width - (width / 4)) || change < width/4) {
     dir *= -1
   }
-
+  
 }

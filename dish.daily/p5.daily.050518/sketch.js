@@ -1,7 +1,9 @@
+// File: 050518
+
 let x = 0
 let spacing = 10
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(400, 400);
 	background(0)
 }
 

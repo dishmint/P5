@@ -16,7 +16,6 @@ function draw(){
   strokeWeight(3 * cos(x))
   fill('lime')
   rect(width/2, height/2, map(cos(x), -1, 1, 10, width/2),map(sin(x), -1, 1, 10, width/2))
-  // rect(width/2, height/2, 50 * cos(x),50 * sin(x))
   
   x ++
   

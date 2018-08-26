@@ -3,6 +3,7 @@
 let adjX, adjY
 let index = 0
 let step = 30
+
 let dir = 1
 function setup(){
   createCanvas(400,400)
@@ -14,7 +15,7 @@ function setup(){
 
 function draw(){
   step +=dir
-  // background(0)
+  
   background(0,10)
   adjX = cos(frameCount)
   adjY = cos(frameCount)
@@ -48,7 +49,7 @@ function draw(){
   pop()
   
   
-
+  
   if (step > 360) {
     step = 30
   }

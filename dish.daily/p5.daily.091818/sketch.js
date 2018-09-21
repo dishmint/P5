@@ -11,7 +11,6 @@ function setup(){
 
 
 function draw(){
-  background(0,10)
   r = map(cos(frameCount * 0.01), -1, 1, random(0,100), random(101,255))
   g = map(sin(frameCount * 0.01), -1, 1, random(0,100), random(101,255))
   b = map(tan(frameCount * 0.01), -1, 1, random(0,100), random(101,255))

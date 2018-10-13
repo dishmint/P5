@@ -32,4 +32,9 @@ function draw(){
     y1 += 10
     y2 += 10
   }
+  
+  if (y1 > (height - spacing) || y2 > (height - spacing)) {
+    y1 = 0
+    y2 = 10
+  }
 }

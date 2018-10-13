@@ -9,12 +9,12 @@ function setup(){
 
 
 function draw(){
-  background(0,10)
+  background(0,50)
 
   let r = random(0, (width/2))
   push()
   translate(width/2, height/2)
-  rotate(frameCount)
+  rotate(5 * frameCount)
   translate(-width/2, -height/2)
   
   beginShape()
@@ -22,8 +22,9 @@ function draw(){
     stroke(255)
     strokeWeight(4)
     line(r,height/2,(r + (width/2)),height/2)
-    stroke(0)
-    strokeWeight(10)
+    stroke(0, 10)
+    strokeWeight(4)
+
     rect(width/2, height/2, 50, 50)
   }
   endShape(CLOSE)

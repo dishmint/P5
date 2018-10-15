@@ -22,7 +22,7 @@ function setup(){
 
 function draw(){
   background(0, 10)
-  
+  strokeWeight(2)
   push()
   translate(width/2, 0)
   

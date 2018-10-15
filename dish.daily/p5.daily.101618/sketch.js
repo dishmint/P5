@@ -11,7 +11,7 @@ function setup(){
   ellipseMode(CENTER)
   angleMode(DEGREES)
   
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 25; i++) {
     rainStreams.push(new Rain())
   }
 }

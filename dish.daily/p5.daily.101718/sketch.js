@@ -21,6 +21,7 @@ function setup(){
 function draw(){
   background(0)
   
+  // RESET THE BRAIN
   if (frameCount % 90 == 0) {
     brain = new Array(brainSize).fill(0).map((x) => {
       return new Neuron()

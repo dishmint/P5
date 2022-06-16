@@ -80,16 +80,16 @@ class Stage {
       // DRAW PERIMETER
       push()
       stroke(255,0,0)
-      strokeWeight(3)
+      strokeWeight(1)
       noFill()
       beginShape()
       for (let perimeterPoint of this.boundary) {
         vertex(perimeterPoint.x, perimeterPoint.y)
         push()
         fill(255, 0,0)
-        strokeWeight(1)
+        strokeWeight(.5)
         stroke(0)
-        ellipse(perimeterPoint.x, perimeterPoint.y, 15, 15)
+        ellipse(perimeterPoint.x, perimeterPoint.y, 8, 8)
         pop()
         noFill()
       }

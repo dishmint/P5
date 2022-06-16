@@ -16,7 +16,7 @@ function setup(){
 }
 
 function draw(){
-  background(0, 10)
+  // background(0, 10)
   
   if (frameCount % 30 === 0) {
     env = new Stage(gridSpacing, numBoundaryPoints)

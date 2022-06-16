@@ -18,6 +18,11 @@ function draw() {
 	background(0)
 
 	// Generate base morphed circle
+	morphon()
+	motive()
+}
+
+function morphon(){
 	noFill()
 	translate(width / 2, height / 2)
 	beginShape()
@@ -35,7 +40,9 @@ function draw() {
 		vertex(x, y)
 	}
 	endShape()
+}
 
+function motive(){
 	delta += deltaSpeed
 
 	if (delta > 254 || delta < 0) {
